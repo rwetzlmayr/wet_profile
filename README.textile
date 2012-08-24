@@ -1,0 +1,9 @@
+h2. wet_profile - Profile fields for Textpattern
+
+This sample plugin for "Textpattern CMS":http://textpattern.com/ demonstrates how to manage additional information for authors in the backend.
+
+For educational purposes only. Not suitable for production use.
+
+h3. License
+
+This plugin is distributed under the GPL2(GNU General Public License Version 2) or later.
