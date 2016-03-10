@@ -32,7 +32,7 @@ class wet_profile
      * @param $event string
      * @param $step string  The lifecycle phase of this plugin.
      */
-    public static function lifecyle($event, $step)
+    public static function lifecycle($event, $step)
     {
         switch ($step) {
             case 'enabled':
