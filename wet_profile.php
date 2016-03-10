@@ -62,6 +62,7 @@ class wet_profile
 	function save($event, $step)
 	{
 		extract(doSlash(psa(array('wet_profile_foo', 'wet_profile_bar', 'user_id'))));
+		$user_id = assert_int($user_id);
 		safe_update('txp_users', "
 			wet_profile_foo = '$wet_profile_foo',
 			wet_profile_bar = '$wet_profile_bar'",
