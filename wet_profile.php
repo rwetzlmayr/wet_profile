@@ -15,7 +15,7 @@ class wet_profile
 	 * @param $step
 	 * @param $status
 	 */
-	function lifecyle($event, $step, $status)
+	public static function lifecyle($event, $step, $status)
 	{
 		switch($status) {
 			case 'enabled':
@@ -41,7 +41,7 @@ class wet_profile
 	 * @param $rs
 	 * @return string
 	 */
-	function ui($event, $step, $dummy, $rs)
+	public static function ui($event, $step, $dummy, $rs)
 	{
 		extract(lAtts(array(
 			'wet_profile_foo' => '',
@@ -59,7 +59,7 @@ class wet_profile
 	 * @param $event
 	 * @param $step
 	 */
-	function save($event, $step)
+	public static function save($event, $step)
 	{
 		extract(doSlash(psa(array('wet_profile_foo', 'wet_profile_bar', 'user_id'))));
 		$user_id = assert_int($user_id);
