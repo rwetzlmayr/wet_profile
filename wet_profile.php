@@ -30,12 +30,11 @@ class wet_profile
      * Add and remove profile fields from txp_users table.
      *
      * @param $event string
-     * @param $step string
-     * @param $status string The lifecycle phase of this plugin.
+     * @param $step string  string The lifecycle phase of this plugin.
      */
-    public static function lifecyle($event, $step, $status)
+    public static function lifecyle($event, $step)
     {
-        switch ($status) {
+        switch ($step) {
             case 'enabled':
                 break;
             case 'disabled':
