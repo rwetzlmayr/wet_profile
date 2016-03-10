@@ -50,7 +50,7 @@ class wet_profile
                 break;
             case 'deleted':
                 /*
-                Drop the two additional columkns from the 'txp_users' table when the plugin is unsintalled.
+                Drop the two additional columns from the 'txp_users' table when the plugin is unsintalled.
                 Caveat: Data in these two columns will be lost. If you want to preserve the additional data
                 across install/uninstall actions you *must not* drop the additional columns.
                 Uncomment the following line to really alter the database when this plugin is uninstalled.
